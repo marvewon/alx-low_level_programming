@@ -5,10 +5,10 @@
 *
 *Description: using the main function
 *this program prints "Programming is like building a multilingual puzzel
-*Retun: 0
+*Return: 0
 */
-int main(void)
+int main(void)i
 {
-	puts("/"Proogramming is like building a mutilingual puzzel");
+	puts("\"Proogramming is like building a mutilingual puzzel");
 	return (0);
 }
