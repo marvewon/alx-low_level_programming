@@ -1,30 +1,44 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- *times_table - Prints the 9 times table, starting with 0.
- */
-void times_table(void)
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
+*
+*
+*Return: returns 0
+*/
+
+int main(void)
 {
-	int num, mult, prod;
+	int num = 1;
 
-	for (num = 0; num <= 9; num++)
+	while (num++ < 100)
 	{
-		_putchar('0');
-
-		for (mult = 1; mult <= 9; mult++)
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			prod = num * mult;
-
-			if (prod <= 9)
-				_putchar(' ');
-			else
-				_putchar((prod / 10) + '0');
-
-			_putchar((prod % 10) + '0');
+			printf("FizzBuzz ");
 		}
-		_putchar('\n');
+		else if ((num % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if ((num % 5) == 0)
+		{
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
+		}
+		else
+		{
+			printf("%d ", num);
+		}
 	}
+	printf("\n");
+
+	return (0);
 }
