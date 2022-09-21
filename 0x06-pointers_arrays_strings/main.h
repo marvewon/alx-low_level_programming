@@ -2,10 +2,9 @@
 #define MAIN_H
 #include <stdio.h>
 /**
- * File: main.h
- * Auth: genius tech (Marvelous Won)
- * Desc: Header file containing prototypes for all functions
- * 	used in the 0x06. C - More pointers, arrays and strings dir.
+ *void prototypes()
+ *int prototypes()
+ *char prototypes()
  */
 void reverse_array(int *a, int n);
 void print_number(int n);
@@ -20,3 +19,5 @@ char *leet(char *);
 char *rot13(char *);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 char *add_strings(char *n1, char *n2, char *r, int r_index);
+
+#endif /*MAIN_H*/
