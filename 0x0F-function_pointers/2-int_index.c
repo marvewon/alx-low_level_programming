@@ -8,7 +8,7 @@
  *
  * Return: the index of the first element, else -1 if no element
  */
-int int_dex(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
