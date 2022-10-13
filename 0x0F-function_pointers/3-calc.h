@@ -1,7 +1,9 @@
-#ifndef 3-CAL_H
-#define 3-CAL_H
+#ifndef CAL_H
+#define CAL_H
 
-#include "function_pointers.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * struct op - strunt op
@@ -22,4 +24,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#end /* 3-CAL_H */
+#end /* CAL_H */

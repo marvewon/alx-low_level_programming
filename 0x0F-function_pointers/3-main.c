@@ -1,4 +1,4 @@
-#include "3-cal.ch"
+#include "3-calc.h"
 
 /**
  * main - call all functions to perform simple operations
