@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * main - call all function
+ * _puts_recurseion  - prints stirng
+ * @s: function parameter
  *
- * Return: Always 0
+ * Return: Always nothing
  */
-int main(void)
+void _puts_recursion(char *s)
 {
-	_puts_recursion("Puts with recursion");
-	_putchar('\n');
-	return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar (*s);
+	_puts_recursion(s + 1);
 }
