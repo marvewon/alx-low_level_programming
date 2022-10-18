@@ -9,7 +9,9 @@
 int is_prime_number(int n)
 {
 	int m = n / 2;
+
 	int i;
+
 	for (i =2; i <= m; i++)
 	{
 		if (n % 2 == 0)
@@ -17,6 +19,9 @@ int is_prime_number(int n)
 			return (1);
 		}
 		else
+		{
 			return (0);
+		}
 	}
+	return (0);
 }
