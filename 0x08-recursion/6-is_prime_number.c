@@ -8,8 +8,15 @@
  */
 int is_prime_number(int n)
 {
-	if (n % 2 == 0)
-		return (1);
-	else
-		return (0);
+	int m = n / 2;
+
+	for (i =2; i <= m; i++)
+	{
+		if (n % 2 == 0)
+		{
+			return (1);
+		}
+		else
+			return (0);
+	}
 }
