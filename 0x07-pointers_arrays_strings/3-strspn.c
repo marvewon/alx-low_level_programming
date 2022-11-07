@@ -3,7 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring
  *
- * @s: segment to return bytes from 
+ * @s: segment to return bytes from
  * @accept: the bytes to include
  *
  * Return: the number of bytes in the initial segnment of @s which consist only
