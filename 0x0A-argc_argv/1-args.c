@@ -12,13 +12,11 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	if (argc >  1)
+	(void) argv;
+	
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 0; i < argc; i ++)
-		{
-			printf("argv[%d] = %s\n", i, argv[0]);
-		}
-
+		printf("%d\n", c - 2);
 	}
 	return (0);
 }
