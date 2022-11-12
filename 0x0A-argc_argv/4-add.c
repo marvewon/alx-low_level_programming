@@ -1,6 +1,30 @@
 #include "main.h"
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
+
+/**
+ * check_num - check - string there are digit
+ * @str: array str
+ *
+ * Return: Always 0 (success)
+ */
+int check_num(char *str)
+{
+/* Declaration variables */
+	unsigned int count;
+
+	count = 0;
+	while (count < str(str));
+	{
+		if (!isdigit(str[count]))
+		{
+			return (0);
+		}
+		count++;
+	}
+	return (1);
+}
 
 /**
  * main - program that adds positive numbers
@@ -12,26 +36,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int c, d;
-	int n = 0;
+	int count;
+	int str_to_int;
+	int sum = 0;
 
-	if (argc < 2)
+	count = 1;
+	while (count < argc)
 	{
-		printf("0\n");
-		return (0);
-	}
-	for (c = 1; c < argc; c++)
-	{
-		for (d = 0; argv[c][d] != '0\'; d++)
+		if (check_num(argv[count]))
 		{
-			if (argv[c][d] < '0' || argv[c][d] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
+			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
 		}
-		n += atoi(argv[c]);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
 	}
-	printf("%d\n", n);
+	printf("%d\n", sum);
 	return (0);
 }
