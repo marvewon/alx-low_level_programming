@@ -1,6 +1,5 @@
 #include "main.h"
-
-/**
+/*
  * mul - Multiply two strings together
  *
  * @num1: The first number, as a string
